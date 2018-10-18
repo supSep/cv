@@ -1,0 +1,181 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+% title on top of the document
+\maintitle{Sep Taheri}
+
+\nobreakspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:sepehr.tah.at.gmail.dot.com}{sepehr.tah\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller604-446-6292\sbull
+\href{http://www.linkedin.com/in/supsep}{supsep} \emph{(LinkedIn)}
+
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\emph{Curious by nature, Sep is an open source enthusiast with an entrepreneurial
+mind and a passion for continuous learning, software engineering and delivering value
+by designing and developing well-tested, maintainable software.} \\
+
+Sep is sofware engineer, speaker, and a finalist of the International Master's
+Program in Distributed Systems Engineering at the Technical University of Dresden,
+Germany. His interests span from topics such as programming language design, distributed
+systems and databases, to software architecture, user interfaces and user experience.
+He is passionate about functional programming, and has been specializing in the Clojure
+programming language.
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {{GE Digital, f.k.a Wurldtech Security Techonologies}}
+  {\textsc{Vancouver, Canada}} {%
+  \headedsubsection
+    {Senior Software Developer, Scrum Master}
+    {Dec \apo17 -- Present}
+    {\bodytext{}}
+    
+  \headedsubsection
+    {Software Developer}
+    {Mar \apo15 -- Dec \apo17}
+    {\bodytext{Led, designed and developed features spanning several teams and stacks for the \href{https://www.ge.com/digital/asset/opshield-ge-digital}OpShield, an industrial
+grade firewall and router used for critical infrastructure, which analyzes data packets over numerous protocols (Layer
+3 and 7 in the OSI Model). Brought REST API into modernity by implementing ActiveMQ
+with JMS, meeting OWASP specifications, implementing a data integrity check and a real-time system statistics monitor. Testing achievements include increasing unit test coverage to 85\% (from 50\%) through unit tests, creating a component test framework, adopting Continuous Integration using Jenkins and Gerrit, and BDD by creating system tests using Cucumber and Selenium.}
+    }
+}
+
+
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://www.quotemedia.com/}{QuoteMedia, Inc.}}
+  {\textsc{Vancouver, Canada}} {
+  \headedsubsection
+    {Junior Developer}
+    {Mar \apo14 -- Mar \apo15}
+    {\bodytext{QuoteMedia is responsible for supervising and regulating securities and other financial instruments, of which provides quotes and dynamic charts, stock portfolio management and live news for numerous stock exchanges (including TSX). Roles included implementing features, tests and fixes on QuoteTools API, a Java web suite built on Struts and JBoss 7, containing an extremely
+fault-tolerant methodology, while balancing efficiency to provide real-time solutions to clients. Impacted the product massively when rebuilding charting engine to produce SVG images which improved mobile
+experience, reduced file size by 44\% and pushed rendering to client-side.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://arbutussolutions.com/}{Arbutus Solutions Ltd.}}
+  {\textsc{Victoria, Canada}} {
+  \headedsubsection
+    {Web Developer}
+    {Nov \apo13 -- Apr \apo14}
+    {\bodytext{The internship was focused on helping designing implementing the \href{http://arbutussolutions.com/}{Arbutus Solutions} website, collaborated with additional remote developers. The dynamic front-facing company website had features such as blogs, news and webinar management, was implemented with SharePoint Server and Designer and Adobe Photoshop. }}
+}
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{https://www.uvic.ca/}{University of Victoria}}
+  {\textsc{Victoria, Canada}} {
+  \headedsubsection
+    {BSc -- Computer Science, with minor in Software Engineering}
+    {2009 -- 2014}
+    {\bodytext{Focused on systems engineering, fault tolerance, network security, cryptography, with additional focus on databases and data mining.}}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Certifications / Awards:}
+\headedsection
+  {\href{https://www.scrumalliance.org/}{Scrum Alliance}}
+  {\textsc{Vancouver, Canada}} {
+  \headedsubsection
+    {Certified Scrum Master}
+    {2017}
+    {}
+}
+
+\headedsection
+  {\href{https://www.ge.com}{GE Stay Lean Award}}
+  {\textsc{Vancouver, Canada}} {
+  \headedsubsection
+    {Conducted a code refactor for a product over four repositories which resulted in over 300,000 lines of code removed, without affecting user functionality }
+    {2016}
+    {}
+}
+
+\headedsection
+  {\href{https://www.sja.ca}{St. John Ambulance}}
+  {\textsc{Vancouver, Canada}} {
+  \headedsubsection
+    {{Occupational First Aid Level 2 Certificate}}
+    {2016}
+    {}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical expertise:}
+  {Software design and development, with(in) a team. Loves writing Clojure(Script)/\nsp
+JavaScript/\nsp Java/\nsp Python/\nsp Go, and has a passion for functional languages
+such as Lisps (particularly Clojure(Script)). Strong understanding of relational
+and document oriented databases; substantial technical skills in \acr{SQL}/\nsp
+\acr{T-SQL}. Solid knowledge of web technologies; fan of Git as a distributed version
+control system.}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Natural languages:}
+  {Farsi \emph{(mother tongue)}, English \emph{(native or bilingual proficiency)},
+Spanish \emph{(limited working proficiency)}}
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {Non-exhaustive and in alphabetical order:}
+  {bossanova (music), databases, design patterns (software), distributed systems,
+functional programming, guitar, JavaScript, history, LISP, literature, music, open
+source, piano, programming, programming languages, programming paradigms, software
+engineering (best practices and methodologies), travel, \acr{UI}/\acr{UX}-design.}
+
+\end{document}
+

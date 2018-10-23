@@ -10,6 +10,7 @@
 %
 
 
+
 % Start a document with the here given default font size and paper size.
 \documentclass[10pt,a4paper]{article}
 
@@ -30,7 +31,7 @@
 % title on top of the document
 \maintitle{Sep Taheri}
 
-\nobreakspace{0.3em}  % add some page break averse vertical spacing
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
 % \noindent prevents paragraph's first lines from indenting
 % \mbox is used to obfuscate the email address
@@ -48,16 +49,12 @@
 
 \vspace{-1.3em}  % some vertical spacing
 \begin{multicols}{2}  % open a multicolumn environment
-\emph{Curious by nature, Sep is an open source enthusiast with an entrepreneurial
+\emph{Curious by nature, Sep is an habitual leader with an entrepreneurial
 mind and a passion for continuous learning, software engineering and delivering value
 by designing and developing well-tested, maintainable software.} \\
 
-Sep is sofware engineer, speaker, and a finalist of the International Master's
-Program in Distributed Systems Engineering at the Technical University of Dresden,
-Germany. His interests span from topics such as programming language design, distributed
-systems and databases, to software architecture, user interfaces and user experience.
-He is passionate about functional programming, and has been specializing in the Clojure
-programming language.
+Sep is a leader by nature, a Certified Scrum Master and an award-winning Sofware Engineer. His interests span from topics such as Agile methodology, team-building and efficiency to databases, software architecture, programming languages design, user interfaces and user experience.
+
 \end{multicols}
 
 
@@ -71,7 +68,7 @@ programming language.
   \headedsubsection
     {Senior Software Developer, Scrum Master}
     {Dec \apo17 -- Present}
-    {\bodytext{}}
+    {\bodytext{Scrum Master for two different teams in two different products located in two seperate locations while maintaining developer role in both teams. Consistently provided QA milestones such as creating a staging server for a product with no documentation, and creating a complex upgrade framework for testing softare version path permuatations. }}
     
   \headedsubsection
     {Software Developer}
@@ -153,12 +150,9 @@ experience, reduced file size by 44\% and pushed rendering to client-side.}}
 \roottitle{Skills}
 \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
   {Technical expertise:}
-  {Software design and development, with(in) a team. Loves writing Clojure(Script)/\nsp
-JavaScript/\nsp Java/\nsp Python/\nsp Go, and has a passion for functional languages
-such as Lisps (particularly Clojure(Script)). Strong understanding of relational
-and document oriented databases; substantial technical skills in \acr{SQL}/\nsp
-\acr{T-SQL}. Solid knowledge of web technologies; fan of Git as a distributed version
-control system.}
+  {Software design, development and team building. Loves writing 
+Java/\nsp Python/\nsp Shell scripts, and has a passion for Agile methodologies. Strong understanding of relational
+(MySQL, PostgreSQL) and document oriented databases (MongoDB); substantial technical skills in SQL. Solid knowledge of web technologies; fan of Git as a distributed version control system. Sharp user of JIRA and Confluence and have a strong understanding within Docker, Postman, WireShark and Selenium.}
 
 \vspace{0.5em}
 \inlineheadsection
@@ -168,11 +162,27 @@ Spanish \emph{(limited working proficiency)}}
 
 \spacedhrule{1.6em}{-0.4em}
 
+\roottitle{Personal Projects}
+\inlineheadsection
+  {UturnMail:}
+  {Developed an email service that provides users with a secondary
+email address that automatically interacts with emails, and will relay important information to the user.
+Implemented using Postfix SMTP, Courier IMAP with TLS encryption on Amazon Web Services.}
+
+\vspace{0.5em}
+\inlineheadsection
+  {NHL Predictor:}
+  {Wrote web crawler in Python that collected and preprocessed over
+50,000 records of NHL seasons, teams and players since 1994 from several web sources and organized them
+in CSV database. Created predictions from processed data by implementing several data mining algorithms.}
+
+\spacedhrule{1.6em}{-0.4em}
+
 \roottitle{Interests}
 
 \inlineheadsection
   {Non-exhaustive and in alphabetical order:}
-  {bossanova (music), databases, design patterns (software), distributed systems,
+  {Reading non-fiction (music), traveling,  databases, design patterns (software), distributed systems,
 functional programming, guitar, JavaScript, history, LISP, literature, music, open
 source, piano, programming, programming languages, programming paradigms, software
 engineering (best practices and methodologies), travel, \acr{UI}/\acr{UX}-design.}

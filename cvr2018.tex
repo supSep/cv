@@ -9,7 +9,6 @@
 %
 % This file is licensed under the CC-NC-ND Creative Commons license.
 %
-
 % Start a document with the here given default font size and paper size.
 \documentclass[10pt,a4paper]{article}
 
@@ -25,12 +24,18 @@
 
 
 \begin{document}  % begin the content of the document
-\sloppy  % this to relax whitespacing in favour of straight margins
+\sloppy{}  % this to relax whitespacing in favour of straight margins
+
+\noindent \$ root@seps-comp:/cv/ make LaTeX-cvr
+
+\noindent \$ building resume . . . 
+
+\noindent \$ Finished: SUCCESS
 
 % title on top of the document
 \maintitle{Sep Taheri}
 
-\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+\vspace{2em}
 
 % \noindent prevents paragraph's first lines from indenting
 % \mbox is used to obfuscate the email address
@@ -47,32 +52,41 @@
 
 \roottitle{Summary}  % a root section title
 
-\vspace{-1.3em}  % some vertical spacing
-\begin{multicols}{2}  % open a multicolumn environment
+Curious by nature, Sep is a leader by nature, a Certified Scrum Master and an 
+award-winning Software Engineer, as well as having an entrepreneurial
+mind and a passion for continuous learning  and delivering value
+by designing and developing well-tested, maintainable software.
+
+\noindent\begin{itemize}  
+\item Build software for embedded systems responsible for defending critical infrastructure from cyber attacks in over 80 countries
+\item Improved team velocity
+\item Educated
+\item Facilitated daily standup \ldots 
+\end{itemize}
+
 Curious by nature, Sep is a habitual leader with an entrepreneurial
 mind and a passion for continuous learning, software engineering and delivering value
 by designing and developing well-tested, maintainable software.
 
-Sep is a leader by nature, a Certified Scrum Master and an award-winning Software Engineer. His interests span from topics such as Agile methodology, team-building and efficiency to databases, software architecture, programming languages design, user interfaces and user experience.
+ Sep is a leader by nature, a Certified Scrum Master and an award-winning Software Engineer. His interests span from topics such as Agile methodology, team-building and efficiency to databases, software architecture, programming languages design, user interfaces and user experience.
 
-\end{multicols}
 
-\spacedhrule{0.5em}{-0.4em}
+\vspace{2em}
+\spacedhrule{0em}{-0.4em}
 
 \roottitle{Skills}
 \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
   {Languages:}
-  {Software design, development and team building. Loves writing 
-Java/\nsp Python/\nsp Shell scripts, and has a passion for Agile methodologies. Strong understanding of relational
-(MySQL, PostgreSQL) and document oriented databases (MongoDB); substantial technical skills in SQL. Solid knowledge of web technologies; fan of Git as a distributed version control system. Sharp user of JIRA and Confluence and have a strong understanding within Docker, Postman, WireShark and Selenium. Strong graphic design development with Adobe Photoshop and Lightroom, with capabilities with JavaScript, jQuery and Angular.}
+  {. Loves writing 
+Java/\nsp Python/\nsp Shell scripts, SQL. JavaScript, jQuery and Angular.}
 
 \inlineheadsection 
   {Techonologies:}
-  {.}
+  {Relational Databases (PostgreSQL, MySql, Orcale SQL), Linux (Debian, Ubuntu), Mac OSX (Brew, Xcode), MongoDB, Git (GitHub, GitLab, Gerrit), Virtual Machines (VMWare Workstation and Fusion, VirtualBox), Docker, Postman, Automation (Selenium, Cucumber, Protractor Test), Network traffic inspection (Crafting and sending Packet Captures (.pcaps), Wireshark), AngularJS.}
   
 \inlineheadsection 
   {Knowledge:}
-  {.}
+  {Agile methodologies (Scrum and Kanban), REST API contract, design and development, and team building, JIRA, BugZilla, Jenkins CI, Confluence, TestRail, PXE Boot (Network boot), Amazon Web Services (AWS), Photoshop .}
 
 \vspace{2em}
 \spacedhrule{0em}{-0.4em}

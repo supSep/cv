@@ -14,6 +14,9 @@
 
 % Set the page margins.
 \usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage{enumitem}
+\setlist{noitemsep}
+\setlist{nosep}
 
 % Setup the language.
 \usepackage[english]{babel}
@@ -25,12 +28,6 @@
 
 \begin{document}  % begin the content of the document
 \sloppy{}  % this to relax whitespacing in favour of straight margins
-
-\noindent \$ root@seps-comp:/cv/ make LaTeX-cvr
-
-\noindent \$ building resume . . . 
-
-\noindent \$ Finished: SUCCESS
 
 % title on top of the document
 \maintitle{Sep Taheri}
@@ -57,18 +54,13 @@ award-winning Software Engineer, as well as having an entrepreneurial
 mind and a passion for continuous learning  and delivering value
 by designing and developing well-tested, maintainable software.
 
-\noindent\begin{itemize}  
-\item Build software for embedded systems responsible for defending critical infrastructure from cyber attacks in over 80 countries
-\item Improved team velocity
+\noindent\begin{itemize}
+\item Built fault-tolertant and reliable software for embedded systems responsible for defending critical infrastructure from cyber attacks in over 80 countries.
+\item Educated and reinforced both local and remote teams in Agile and Scrum methodology. Facilitated
+cross-team coordination and collaboration.
 \item Educated
-\item Facilitated daily standup \ldots 
+\item Facilitated and time-boxed the daily stand up meeting with both local and remote resources.
 \end{itemize}
-
-Curious by nature, Sep is a habitual leader with an entrepreneurial
-mind and a passion for continuous learning, software engineering and delivering value
-by designing and developing well-tested, maintainable software.
-
- Sep is a leader by nature, a Certified Scrum Master and an award-winning Software Engineer. His interests span from topics such as Agile methodology, team-building and efficiency to databases, software architecture, programming languages design, user interfaces and user experience.
 
 
 \vspace{2em}
@@ -77,16 +69,15 @@ by designing and developing well-tested, maintainable software.
 \roottitle{Skills}
 \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
   {Languages:}
-  {. Loves writing 
-Java/\nsp Python/\nsp Shell scripts, SQL. JavaScript, jQuery and Angular.}
+  {Java, Javscript, Scala, Python, Shell scripts, SQL, HTML5, CSS, jQuery and Angular.}
 
 \inlineheadsection 
   {Techonologies:}
-  {Relational Databases (PostgreSQL, MySql, Orcale SQL), Linux (Debian, Ubuntu), Mac OSX (Brew, Xcode), MongoDB, Git (GitHub, GitLab, Gerrit), Virtual Machines (VMWare Workstation and Fusion, VirtualBox), Docker, Postman, Automation (Selenium, Cucumber, Protractor Test), Network traffic inspection (Crafting and sending Packet Captures (.pcaps), Wireshark), AngularJS.}
+  {Relational Databases (PostgreSQL, MySql, Orcale SQL), Linux (Debian, Ubuntu), Mac OSX (Brew, Xcode), MongoDB, Git (GitHub, GitLab, Gerrit), Virtual Machines (VMWare Workstation and Fusion, VirtualBox), Maven, Gradle, JMS, Hibernate, eBean, Docker, Postman, Automation (Selenium, Cucumber, Protractor Test), Network traffic inspection (Crafting and sending Packet Captures (.pcaps), Wireshark), Eclipse,  AngularJS.}
   
 \inlineheadsection 
   {Knowledge:}
-  {Agile methodologies (Scrum and Kanban), REST API contract, design and development, and team building, JIRA, BugZilla, Jenkins CI, Confluence, TestRail, PXE Boot (Network boot), Amazon Web Services (AWS), Photoshop .}
+  {Agile methodologies (Scrum and Kanban), REST API contract, design and development, and team building, JIRA, BugZilla, Jenkins CI, Confluence, TestRail, PXE Boot (Network boot), Amazon Web Services (AWS), Photoshop.}
 
 \vspace{2em}
 \spacedhrule{0em}{-0.4em}
@@ -99,19 +90,23 @@ Java/\nsp Python/\nsp Shell scripts, SQL. JavaScript, jQuery and Angular.}
   \headedsubsection
     {Senior Software Developer, Scrum Master}
     {Dec \apo17 -- Present}
-    {\bodytext{Scrum Master for two different teams in two different products located in two seperate locations while maintaining developer role in both teams. Continued role as Epic Owner and architecting costumer solutions for an embedded system. Influenced decisions for software release such as migrating OS and provided insight on clients usage and provided solutions swiftly. Consistently provided QA milestones such as recreating a staging environment for a product with no documentation, and conceived a complex upgrade framework for testing softare version path permuatations. }}
+   {\noindent\begin{itemize}  \item Scrum Master for two different teams in two different products located in two seperate locations while maintaining developer role in both teams.
+\item Continued role as Epic Owner and architecting costumer solutions for an embedded system.
+\item Influenced decisions for software release such as migrating OS and provided insight on clients usage and provided solutions swiftly.
+\item Consistently provided QA milestones such as recreating a staging environment for a product with no documentation, and conceived a complex upgrade framework for testing softare version path permuatations. 
+\end{itemize}}
     
   \headedsubsection
     {Software Developer}
     {Mar \apo15 -- Dec \apo17}
-    {\bodytext{Led, designed and developed features spanning several teams and stacks for the \href{https://www.ge.com/digital/asset/opshield-ge-digital}OpShield, an industrial
+    {\noindent\begin{itemize}  \item Led, designed and developed features spanning several teams and stacks for the \href{https://www.ge.com/digital/asset/opshield-ge-digital}OpShield, an industrial
 grade firewall and router used for critical infrastructure, which analyzes data packets over numerous protocols (Layer
-3 and 7 in the OSI Model). Brought REST API into modernity by implementing ActiveMQ
-with JMS, meeting OWASP specifications, implementing a data integrity check verifying SHA256 hashes and a real-time system statistics monitor using collectd. Testing achievements include increasing unit test coverage to 85\% (from 50\%) through unit tests, creating a component test framework, adopting Continuous Integration using Jenkins and Gerrit, and BDD by creating system tests using Cucumber and Selenium.}
-    }
+3 and 7 in the OSI Model).
+\item Brought REST API into modernity by implementing ActiveMQ
+with JMS, meeting OWASP specifications, implementing a data integrity check verifying SHA256 hashes and a real-time system statistics monitor using collectd.
+\item Testing achievements include increasing unit test coverage to 85\% (from 50\%) through unit tests, creating a component test framework, adopting Continuous Integration using Jenkins and Gerrit, and BDD by creating system tests using Cucumber and Selenium.
+\end{itemize}}
 }
-
-
 
 \headedsection  % sets the header for the section and includes any subsections
   {\href{https://www.quotemedia.com/}{QuoteMedia, Inc.}}
@@ -119,9 +114,13 @@ with JMS, meeting OWASP specifications, implementing a data integrity check veri
   \headedsubsection
     {Junior Developer}
     {Mar \apo14 -- Mar \apo15}
-    {\bodytext{QuoteMedia is responsible for supervising and regulating securities and other financial instruments, of which provides quotes and dynamic charts, stock portfolio management and live news for numerous stock exchanges (including TSX). Roles included implementing features, tests and fixes on QuoteTools API, a Java web suite built on Struts and JBoss 7, containing an extremely
-fault-tolerant methodology, while balancing efficiency to provide real-time solutions to clients. Impacted the product massively when rebuilding charting engine to produce SVG images which improved mobile
-experience, reduced file size by 44\% and pushed rendering to client-side.}}
+    {\noindent\begin{itemize}  
+\item QuoteMedia is responsible for supervising and regulating securities and other financial instruments, of which provides quotes and dynamic charts, stock portfolio management and live news for numerous stock exchanges (including TSX).
+\item Roles included implementing features, tests and fixes on QuoteTools API, a Java web suite built on Struts and JBoss 7, containing an extremely
+fault-tolerant methodology, while balancing efficiency to provide real-time solutions to clients.
+\item Impacted the product massively when rebuilding charting engine to produce SVG images which improved mobile
+experience, reduced file size by 44\% and pushed rendering to client-side.
+\end{itemize}}
 }
 
 \headedsection  % sets the header for the section and includes any subsections
@@ -130,7 +129,11 @@ experience, reduced file size by 44\% and pushed rendering to client-side.}}
   \headedsubsection
     {Web Developer}
     {Nov \apo13 -- Apr \apo14}
-    {\bodytext{The internship was focused on helping designing implementing the \href{http://arbutussolutions.com/}{Arbutus Solutions} website, collaborated with additional remote developers. The dynamic front-facing company website had features such as blogs, news and webinar management, was implemented with SharePoint Server and Designer and Adobe Photoshop. }}
+    {\noindent\begin{itemize}  
+\item The internship was focused on helping designing implementing the \href{http://arbutussolutions.com/}{Arbutus Solutions} website, collaborated with additional remote developers.
+\item The dynamic front-facing company website had features such as blogs, news and webinar management, was implemented with jQuery, SharePoint Server and Designer and Adobe Photoshop.
+fault-tolerant methodology, while balancing efficiency to provide real-time solutions to clients.
+\end{itemize}}
 }
 
 \spacedhrule{0.5em}{-0.4em}
